@@ -31,7 +31,7 @@ function renderLicenseLink(license) {
     return 'https://spdx.org/licenses/GPL-3.0-or-later.html';
   } else if (license === 'GNU LGPLv3') {
     return 'https://spdx.org/licenses/LGPL-3.0-or-later.html';
-  } else if (license === 'Mozilla Piblic License 2.0') {
+  } else if (license === 'Mozilla Public License 2.0') {
     return 'https://spdx.org/licenses/MPL-2.0.html';
   } else if (license === 'Apache License 2.0') {
     return 'https://spdx.org/licenses/Apache-2.0.html';
@@ -60,7 +60,7 @@ function generateMarkdown(data) {
   return `# ${data.title} ${renderLicenseBadge(data.license)}
   \n\n## Table of Contents
 \n*[Description](#description)
-\n*[Installation](#nstallation)
+\n*[Installation](#installation)
 \n*[Instructions](#instructions)
 \n*[License](#lincense)
 \n*[Contribution](#contribution)
