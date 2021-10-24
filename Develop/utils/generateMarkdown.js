@@ -50,7 +50,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   return`
-  ## The License for this project is: ${license}.
+  \n${license}.
   \nLink: ${renderLicenseLink(license)}
   `
 }
@@ -59,20 +59,20 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title} ${renderLicenseBadge(data.license)}
   \n\n## Table of Contents
-\n**1. Description
-\n**2 Installation
-\n**3. Instruction for Use
-\n**4. License
-\n**5. Contribution
-\n**6. Testing
-\n**7. GitHub
+\n*[Description](#description)
+\n*[Installation](#nstallation)
+\n*[Instructions](#instructions)
+\n*[License](#lincense)
+\n*[Contribution](#contribution)
+\n*[Testing](#testing)
+\n*[GitHub](#github)
 \n\n## Description
 \n${data.description}
-\n\n## Installation Process
+\n\n## Installation
 \n${data.installation}
-\n\n## Instructions and Examples of Use
+\n\n## Instructions
 \n${data.exampleOfUse}
-\n\n${renderLicenseSection(data.license)}
+\n\n## License${renderLicenseSection(data.license)}
 \n\n## Contribution
 \n${data.contribution}
 \n\n## Testing
